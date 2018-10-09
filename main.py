@@ -44,7 +44,6 @@ def prepare_url(args):
 
 def send_sms(message):
     credential = json.load(open("./secret.json"))
-    print json.dumps(credential, indent=4)
     sms = "https://smsapi.free-mobile.fr/sendmsg?user="
     sms += credential["SMS"]["user"]
     sms += "&pass="
