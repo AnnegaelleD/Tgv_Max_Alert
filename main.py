@@ -105,7 +105,7 @@ def main():
         if search_train(data, hour, args) == True:
             return (1)
         else:
-            print "Aucun train disponible ..."
+            print time.strftime("%d-%m-%Y %H:%M:%S", time.gmtime()),"Aucun train disponible ..."
         time.sleep(60)
 
 if __name__ == '__main__':
